@@ -1,0 +1,119 @@
+/* xl responsive----------- */
+
+
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+    .second-title {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* lg responsive----------- */
+
+
+@media only screen and (min-width: 200px) and (max-width: 992px) {
+    .f-content-box {
+        margin: 20px 15px;
+    }
+
+    .p-content-box {
+        margin: 20px 15px;
+    }
+
+    .a-content-text {
+        margin: 0px 0px;
+    }
+
+    .a-content-img {
+        margin: 00px 0px 10px 20px;
+    }
+
+    .hero_area {
+        margin: 100px 10px 0px 10px;
+    }
+
+    .section-gap {
+        padding: 100px 0px;
+    }
+
+    .hero-text {
+        margin: 5% 10px 0px 10px;
+    }
+
+    .hero-img {
+        margin: 0px 10px;
+    }
+
+}
+
+
+
+
+
+/* md responsive----------- */
+
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {}
+
+
+/* sm phone responsive css end */
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+    .f-content-box {
+        padding: 30px 40px;
+    }
+
+    .f-content-box .features-arw {
+        margin: 10px 0px 0px 5px;
+    }
+
+    .second-heading {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .section-gap {
+        padding: 50px 0px;
+    }
+
+    .social_links,
+    .top_arrow,
+    .bottom_arrow {
+        display: none;
+    }
+
+    .f-content-box:hover .f-content-text {
+        transform: translateY(3px);
+    }
+
+    .p-content-text {
+        padding: 25px 20px;
+    }
+
+    .a-content-img img {
+        transform: translateY(20px) translateX(-20px);
+    }
+
+    .first-heading {
+        font-size: 2.2rem;
+        line-height: 50px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .hero-img {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 382px) {
+    .first-heading {
+        font-size: 1.7rem;
+    }
+}

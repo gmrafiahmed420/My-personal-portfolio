@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: #08E;
+}
+</style>
+
+<body>
+    <div class="tabs">
+        <ul id="tabs-nav">
+            <li><a href="#tab1">education</a></li>
+            <li><a href="#tab2">professional skills</a></li>
+            <li><a href="#tab3">experience</a></li>
+            <li><a href="#tab4">interview</a></li>
+        </ul> <!-- END tabs-nav -->
+        <div id="tabs-content">
+            <div id="tab1" class="tab-content resume_content tab-data active">
+                <div class="r-content-right">
+                    <span class="subtitle">2007 - 2010</span>
+                    <h2 class="second-heading">education quality</h2>
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                </div>
+                <div class="r-content-left">
+                    <span class="subtitle">2007 - 2010</span>
+                    <h2 class="second-heading">education quality</h2>
+
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                    <div class="r-content-box">
+                        <h3 class="second-title">personal portfolio april fools
+                        </h3>
+                        <p>University of DVI (1997 - 2001)</p>
+                        <div class="rating-btn">
+                            <span>4.30/5</span>
+                        </div>
+                        <hr />
+                        <p>Maecenas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam inventore
+                            earum
+                            fugiat facilis laboriosam veritatis nesciunt ipsum culpa dolor...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-content resume_content tab-data active">
+                <h2>Dante Hicks</h2>
+                <p>"My friend here's trying to convince me that any independent contractors who were working on the
+                    uncompleted Death Star were innocent victims when it was destroyed by the Rebels."</p>
+            </div>
+            <div id="tab3" class="tab-content">
+                <h2>Randall Graves</h2>
+                <p>"In light of this lurid tale, I don't even see how you can romanticize your relationship with
+                    Caitlin. She broke your heart and inadvertently drove men to deviant lifestyles."</p>
+            </div>
+            <div id="tab4" class="tab-content">
+                <h2>Jay</h2>
+                <p>"I don't care if she's my cousin or not, I'm gonna knock those boots again tonight."</p>
+            </div>
+        </div> <!-- END tabs-content -->
+    </div> <!-- END tabs -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        // Show the first tab and hide the rest
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+
+        // Click function
+        $('#tabs-nav li').click(function () {
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.tab-content').hide();
+
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });
+
+    </script>
+</body>
+
+</html>

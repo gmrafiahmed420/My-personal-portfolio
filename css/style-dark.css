@@ -1,0 +1,357 @@
+/* common css -----------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #ff014d;
+    --secondary-color: #f4f5f6;
+    --tertiary-color: #0d1013;
+    --gray-color: #f6f6f6;
+    --subtitle-color: #f9004d;
+    --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-2: #212428;
+    --shadow-1: 10px 10px 19px #1c1e22,
+        -10px -10px 19px #262a2e;
+    --shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
+    --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--primary-font);
+    background-color: rgb(42, 42, 42);
+    color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 10px 15px;
+}
+
+hr {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+p {}
+
+
+i{
+    font-size: 20px;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+hr{
+    max-width: 1300px;
+    margin: auto;
+    height: 1px;
+    background-color: rgb(218, 216, 216);
+    border: none;
+}
+
+
+.btn {
+    display: inline-block;
+    color: var(--primary-color);
+    background: var(--gradient-box-w);
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 13px 25px;
+    transition: all 0.5s ease;
+}
+
+.dark-btn i{
+    color: var(--secondary-color);
+    margin-right: 20px;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.dark-btn:hover i{
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.btn_2 {
+    padding: 12px 15px;
+    color: var(--tertiary-color);
+    background: var(--gradient-box-w);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btn_2:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.btn_3 {
+    background-color: #ECF0F3;
+    transition: all 0.5s ease;
+}
+
+
+.btn_3:hover {
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    border-radius: 5px;
+}
+
+.section-gap{
+    padding: 100px 0px;
+}
+
+
+.header-span {
+    color: var(--primary-color);
+}
+
+.first-heading{
+    font-size: 3.5rem;
+    margin: 20px 0px;
+}
+
+.first-para {
+    font-size: 16px;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0px 0px 40px 0px;
+}
+
+.second-heading {
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    margin: 10px 0px 25px 0px;
+    word-spacing: 0.5rem;;
+}
+
+.second-para {}
+
+.second-title{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.description{
+    font-size: 16px;
+    line-height: 1.7rem;
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.subtitle{
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* header css start ---------------*/
+
+#header_area{
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    padding: 30px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navList ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+#navList ul li{
+    list-style: none;
+    margin: 0px 20px;
+    position: relative;
+}
+
+#navList ul li a::after{
+    position: absolute;
+    content: "";
+    background-color: var(--primary-color);
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.4s ease;
+}
+#navList ul li a:hover{
+    color: rgb(95, 95, 95);
+}
+#navList ul li a:hover::after{
+    width: 100%;
+}
+
+#navList ul li a{
+    color: var(--secondary-color);
+}
+
+#navList ul li:first-child a{
+    color: var(--primary-color);
+    transition: all 0.4s ease
+}
+#navList ul li:first-child a::after{
+    position: absolute;
+    content: "";
+    background-color: var(--tertiary-color);
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+}
+#navList ul li:first-child a:hover::after{
+    width: 100%;
+}
+
+
+.hero_area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero-img{
+    flex-basis: 32%;
+    position: relative;
+    z-index: 1;
+}
+.hero-img::before{
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    content: "";
+    background-color: var(--secondary-color);
+    left: 0;
+    bottom: 10px;
+    z-index: -1;
+}
+.hero-text{
+    flex-basis: 55%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 60px;
+    top: 28%;
+}
+.social-links span{
+    margin-top: 8%;
+    display: block;
+}
+.social-links i{
+    margin: 20px 25px;
+}
+/* header area css end --------*/
+
+/* features area css start --------*/
+
+.features{
+    text-align: center;
+}
+
+.features_content{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-content-box{
+    flex-basis: 32%;
+    margin: 20px 0px;
+    background: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 13px 25px;
+    transition: all 0.4s ease;
+}
+.f-content-box i{
+    color: var(--subtitle-color);
+    font-size: 36px;
+    margin: 20px 0px 30px 0px;
+    transition: all 0.4s ease;
+}
+
+.f-content-box:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.f-content-box:hover i{
+    color: var(--tertiary-color);
+}
+
+.content-text{
+    padding: 20px 20px;
+}
+
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/
+/* main css end --------*/

@@ -1,6 +1,6 @@
 // navbar javascript start--------------------------------
 
-let navList = document.querySelector('#navList').querySelectorAll('a');
+let navList = document.querySelector('#navbarSupportedContent').querySelectorAll('a');
 
 navList.forEach(element => {
     element.addEventListener("click", function(){
@@ -12,7 +12,7 @@ navList.forEach(element => {
 
 
 window.addEventListener('scroll', function(){
-    let navBar = document.querySelector('.navbar');
+    let navBar = document.querySelector('.navbar ');
     navBar.classList.toggle('sticky', window.scrollY > 50);
 })
 

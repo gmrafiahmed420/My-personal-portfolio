@@ -23,6 +23,9 @@
     --secondary-font: 'Montserrat', sans-serif;
 }
 
+
+/* common css start ------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -62,41 +65,20 @@ hr {
     margin: auto;
 }
 
-.btn {
-    display: inline-block;
-    color: var(--secondary-color);
-    background: var(--primary-color);
-    box-shadow: var(--shadow-white-3);
-    font-weight: normal;
-    border-radius: 5px;
-    padding: 13px 25px;
-    transition: all 0.5s ease;
+img {
+    width: 100%;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
-    transform: translateY(-5px);
-}
+/* common css end ------------------------*/
 
-.btn_2 {
-    padding: 12px 13px;
-    color: var(--tertiary-color);
-    background: var(--gradient-box-w);
-    box-shadow: var(--shadow-white-3);
-    border-radius: 5px;
-    transition: all 0.5s ease;
-}
 
-.btn_2:hover {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
-    transform: translateY(-5px);
-}
 
-.social_links .fa-facebook-f {
-    padding: 13px 15px;
-}
+
+
+
+
+/* utility classes start ------------------- */
 
 .section-gap {
     padding: 140px 0px;
@@ -115,6 +97,8 @@ hr {
 .first-heading {
     font-size: 3.3rem;
     margin: 20px 0px;
+    font-weight: 600;
+    line-height: 70px;
 }
 
 .first-para {
@@ -157,18 +141,146 @@ hr {
     width: 10%;
 }
 
-img {
-    width: 100%;
-    cursor: pointer;
+/* utility classes end ------------------- */
+
+
+
+
+
+
+/* all btn style start -------------------------- */
+
+.buy_now_btn {
+    display: inline-block;
+    color: var(--secondary-color);
+    background: var(--tertiary-color);
+    box-shadow: var(--shadow-white-3);
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 13px 25px;
+    transition: all 0.5s ease;
 }
 
-/* common css end *-------------------------------------/
+.buy_now_btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.purchase_btn {
+    background: var(--primary-color);
+}
+
+.purchase_btn:hover {
+    background: var(--tertiary-color);
+}
+
+.submit_btn {
+    padding: 12px 13px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s ease;
+}
+
+.submit_btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.social_btn {
+    font-size: 20px;
+    margin: 20px 25px;
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    padding: 11px 12px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    color: var(--tertiary-color);
+}
+
+.social_btn:hover {
+    color: var(--secondary-color);
+    background: var(--tertiary-color);
+    transform: translateY(-5px);
+}
+
+.dark_mode_btn a {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/* all btn style end -------------------------- */
 
 
-/* utility classes start ----------------------------*/
 
 
-/* utility classes end ------------------------------*/
+
+/* social link style start -----------------------*/
+
+.social_links .fa-facebook-f {
+    padding: 12px 15px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 75px;
+    bottom: 30%;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.social_links.active {
+    opacity: 0;
+}
+
+.top_arrow,
+.bottom_arrow {
+    position: fixed;
+    left: 5%;
+    top: 45%;
+    color: var(--primary-color);
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.top_arrow i,
+.bottom_arrow i {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.top_arrow.active,
+.bottom_arrow.active {
+    opacity: 0;
+}
+
+.bottom_arrow {
+    top: 55%;
+}
+
+.bottom_arrow i {
+    transform: rotate(180deg);
+}
+
+
+/* social link style end -----------------------*/
+
+
+
+
 
 
 /* color mode css start */
@@ -192,83 +304,51 @@ img {
 
 /* header css start ---------------------------------*/
 
-#header_area {
-    position: relative;
-}
-
 #header_area .section-gap {
     padding: 120px 0px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-family: 'Yellowtail', cursive;
+    font-size: 28px;
+    font-weight: bolder;
+    border-bottom: 5px double var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+
+.navbar-toggler {
     position: relative;
 }
 
-.logo h1 {
-    font-family: 'Yellowtail', cursive;
-    font-size: 30px;
-    font-weight: bolder;
-    border-bottom: 5px double var(--primary-color);
-}
-
-.logo h1 a {
+.navbar-toggler .top-bar,
+.middle-bar,
+.bottom-bar {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    background-color: transparent;
-    content: "";
+    height: 50%;
+    background-color: #000;
+    transform: rotate(135deg);
 }
 
-.top_arrow {
-    position: fixed;
-    left: 5%;
-    top: 45%;
-    color: var(--primary-color);
-    background: var(--gradient-box-w);
-    box-shadow: var(--shadow-white-3);
-    font-weight: normal;
-    border-radius: 5px;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: left 1s ease;
+.middle-bar {
+    margin-top: 10px;
 }
 
-.top_arrow i {
-    font-size: 20px;
-    color: var(--primary-color);
+.bottom-bar {
+    margin-top: -10px;
 }
 
-.top_arrow.active {
-    left: -7%;
-}
-
-.bottom_arrow.active {
-    left: -7%;
-}
-
-.bottom_arrow {
-    position: fixed;
-    left: 5%;
-    top: 55%;
-    color: var(--primary-color);
-    background: var(--gradient-box-w);
-    box-shadow: var(--shadow-white-3);
-    font-weight: normal;
-    border-radius: 5px;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: left 1s ease;
-}
-
-.bottom_arrow i {
-    font-size: 20px;
-    color: var(--primary-color);
-    transform: rotate(180deg);
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .sticky {
@@ -276,75 +356,64 @@ img {
 }
 
 .navbar {
-    position: fixed;
-    height: 10vh;
     background-color: #ECF0F3;
-    width: 100%;
     padding: 30px 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 3;
     transition: all 1s ease;
 }
 
-#navList ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
+.navbar-nav li {
+    margin: 10px 15px;
     position: relative;
 }
 
-#navList ul li {
-    list-style: none;
-    margin: 0px 20px;
-    position: relative;
-}
-
-#navList ul li a::after {
+.navbar-nav li a::after {
     position: absolute;
     content: "";
     background-color: var(--primary-color);
-    width: 0%;
+    width: 0px;
     height: 2px;
-    bottom: -5px;
-    left: 0;
+    bottom: 0px;
+    left: 50%;
     transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
 }
 
-#navList ul:hover li a {
+.navbar-nav li a:hover::after {
+    width: 50%;
+}
+
+.navbar-nav:hover li a {
     color: rgb(160, 160, 160);
 }
 
-#navList ul li a:hover {
+.navbar-nav:hover li a:hover {
     color: var(--tertiary-color);
 }
 
-#navList ul li a:hover::after {
-    width: 100%;
-}
 
-#navList ul li a {
+.navbar-nav li a {
     color: var(--tertiary-color);
     transition: all 0.3s ease;
 }
 
-#navList ul li:first-child a::after {
+.navbar-nav li:first-child a::after {
     position: absolute;
     content: "";
     background-color: var(--tertiary-color);
-    width: 0%;
+    width: 0px;
     height: 2px;
-    bottom: -5px;
-    left: 0;
+    bottom: 0px;
+    left: 50%;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
 }
 
-#navList ul li:first-child a:hover::after {
-    width: 100%;
+.navbar-nav li:first-child a:hover::after {
+    width: 50%;
+    background: var(--tertiary-color);
 }
 
-#navList ul li a.active {
+.navbar-nav li a.active {
     color: var(--primary-color);
 }
 
@@ -371,7 +440,7 @@ img {
 
 .hero-text {
     position: relative;
-    margin: 7%;
+    margin: 7% 0% 0% 15%;
 }
 
 .typingText {
@@ -409,26 +478,6 @@ img {
 
 .typed-cursor {
     display: none;
-}
-
-.social_links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 75px;
-    top: 30%;
-    transition: right 1s ease;
-}
-
-.social_links i {
-    font-size: 20px;
-    margin: 20px 25px;
-}
-
-
-.social_links.active {
-    right: -80px;
 }
 
 /* header area css end --------------------------*/
@@ -1230,24 +1279,6 @@ img {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.contact-form .btn {
-    flex-basis: 100%;
-    text-align: center;
-    margin: 22px 0px;
-    background-color: var(--tertiary-color);
-    box-shadow: var(--shadow-white-3);
-    color: var(--secondary-color);
-    transition: 0.4s ease;
-}
-
-.contact-form .btn:hover {
-    background-color: var(--primary-color);
-}
-
-.contact-form .btn:hover i {
-    color: var(--secondary-color);
 }
 
 /* contact area css end -------------------------*/

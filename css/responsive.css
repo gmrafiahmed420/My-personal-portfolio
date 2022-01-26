@@ -29,6 +29,15 @@
         box-shadow: 2px 2px 10px rgb(224, 224, 224);
     }
 
+    .social_btn {
+        background: var(--tertiary-color);
+        color: var(--secondary-color);
+    }
+
+    .social_btn:hover {
+        color: var(--tertiary-color);
+        background: var(--primary-color);
+    }
 }
 
 
@@ -107,7 +116,7 @@
     }
 
     .p-content-text {
-        padding: 25px 20px;
+        padding: 25px 25px;
     }
 
     .a-content-img img {
@@ -121,11 +130,11 @@
     }
 
     .hero-img {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .hero_area {
-        margin: 0px;
+        margin: 5px;
     }
 
     .first-heading {
@@ -171,11 +180,6 @@
         font-size: 24px;
     }
 
-
-    .buy_now_btn {
-        margin-left: 22px;
-    }
-
     .navbar-nav li:first-child a::after,
     .navbar-nav li a::after {
         display: none;
@@ -193,10 +197,36 @@
         margin: 20px;
     }
 
+    .r-content-box {
+        padding: 30px 30px;
+    }
+
+    .r-content-box .rating-btn span {
+        top: 32%;
+        z-index: 900;
+        font-size: 12px;
+    }
+
+    .r-content-box p {
+        font-size: 14px;
+    }
+
+    .resume_content .second-heading {
+        font-size: 1.7rem;
+    }
+
+    .resume .resume-sub,
+    .resume-h2 {
+        margin-left: 20px;
+    }
+
+    .resume_content {
+        padding-top: 20px;
+    }
 }
 
 
-@media only screen and (min-width: 200px) and (max-width: 360px) {
+@media only screen and (min-width: 200px) and (max-width: 374px) {
     .first-heading {
         font-size: 1.7rem;
     }

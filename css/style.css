@@ -236,10 +236,6 @@ img {
     z-index: 1000;
 }
 
-.social_links.active {
-    opacity: 0;
-}
-
 .top_arrow,
 .bottom_arrow {
     position: fixed;
@@ -746,31 +742,22 @@ img {
 /* resume area css end -----------------------------------------*/
 
 .resume_content_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0px;
     background: var(--gradient-box-w);
     box-shadow: var(--shadow-white-3);
     border-radius: 10px;
-    flex-wrap: wrap;
+    padding: 0;
 }
 
 .resume_content_btn li {
-    flex-basis: 25%;
     text-align: center;
     padding: 30px 13px;
-    color: var(--tertiary-color);
-    background: transparent;
-    border-radius: 10px;
-    list-style: none;
     transition: all 0.4s ease;
+    list-style: none;
+    border-radius: 10px;
 }
 
 .resume_content_btn li a {
-    padding: 30px 50px;
-    font-size: 16px;
-    transition: all 0.4s ease;
+    padding: 30px 23px;
 }
 
 .resume_content_btn li a.active {
@@ -787,29 +774,19 @@ img {
     box-shadow: var(--shadow-white-3);
 }
 
-.resume_content_btn li a:hover {
+
+.resume_content_btn li:hover a {
     color: var(--primary-color);
 }
 
-.resume_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
-    transition: all 1s ease;
-}
+
 
 .resume_content .second-heading {
     font-size: 2.3rem;
 }
 
-.r-content-right {
-    flex-basis: 48%;
-}
-
-.r-content-left {
-    flex-basis: 48%;
+.resume_content {
+    padding-top: 50px;
 }
 
 .r-content-box {
@@ -832,6 +809,7 @@ img {
     box-shadow: 0px 0px 0px #000;
     background: transparent;
     color: var(--secondary-color);
+    clear: both;
 }
 
 .resume_content .second-title {

@@ -1,7 +1,7 @@
 /* xl responsive----------- */
 
 
-@media only screen and (min-width: 200px) and (max-width: 1250px) {
+@media only screen and (min-width: 200px) and (max-width: 1300px) {
     .second-title {
         font-size: 18px;
     }
@@ -37,6 +37,20 @@
     .social_btn:hover {
         color: var(--tertiary-color);
         background: var(--primary-color);
+    }
+
+    .arrow,
+    .arrow2,
+    .quotes {
+        display: none;
+    }
+
+    .contact-info,.contact-form{
+        margin: 20px;
+    }
+
+    .footer h6{
+        margin-bottom: 100px;
     }
 }
 
@@ -75,6 +89,17 @@
     .hero-img {
         margin: 0px 10px;
     }
+
+    .pricing_btn.row {
+        margin: 30px;
+    }
+
+    .pricing-info {
+        margin: 30px;
+    }
+    .r-content-left{
+        margin-top: 30px;
+    }
 }
 
 
@@ -84,7 +109,24 @@
 /* md responsive----------- */
 
 
-@media only screen and (min-width: 200px) and (max-width: 768px) {}
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .t-content-info2 .second-title {
+        font-size: 22px;
+    }
+
+    .t-content-info2 p {
+        font-size: 16px;
+    }
+
+    .t-content-info2 .clients-rating {
+        top: 30%;
+        padding: 10px 10px;
+    }
+
+    .t-content-info2 .clients-rating img {
+        width: 10px;
+    }
+}
 
 
 /* sm phone responsive css end */
@@ -223,6 +265,57 @@
     .resume_content {
         padding-top: 20px;
     }
+
+    .t-content-info2 .second-title {
+        font-size: 19px;
+    }
+
+    .t-content-info2 p {
+        font-size: 14px;
+    }
+
+    .t-content-info2 .clients-rating img {
+        width: 9px;
+    }
+
+    .t-content-info2 {
+        padding: 15px 15px;
+        position: relative;
+    }
+
+    .price-header h2 {
+        font-size: 22px;
+    }
+
+    .pricing-info p {
+        font-size: 14px;
+    }
+
+    .price_btn {
+        font-size: 18px;
+    }
+
+    .pricing-info {
+        padding: 20px 20px;
+    }
+
+    .pricing-info small {
+        display: block;
+    }
+
+    .contact-form,.contact-info{
+        padding: 20px;
+    }
+    
+    .contact-info,.contact-info .phone,.contact-info .email{
+        font-size: 14px;
+    }
+
+    .footer h6{
+        font-size: 14px;
+        margin-bottom: 80px;
+    }
+
 }
 
 
@@ -233,5 +326,25 @@
 
     .buy_now_btn {
         font-size: 12px;
+    }
+
+    .t-content-info2 .clients-rating img {
+        width: 8px;
+    }
+
+    .t-content-info2 .clients-rating {
+        top: 28%;
+    }
+
+    .price-header h2 {
+        font-size: 20px;
+    }
+
+    .price_btn {
+        font-size: 16px;
+    }
+    
+    .contact-info h3{
+        font-size: 22px;
     }
 }

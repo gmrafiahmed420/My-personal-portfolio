@@ -66,16 +66,6 @@ window.addEventListener('scroll', function(){
 // })
 
 
-let resume = document.querySelector('.resume_content_btn').querySelectorAll('li');
-
-resume.forEach(element => {
-    element.addEventListener("click", function(){
-        resume.forEach(nav=>nav.classList.remove("active"))
-
-        this.classList.add("active");
-    })
-})
-
 let resume_a = document.querySelector('.resume_content_btn').querySelectorAll('a');
 
 resume_a.forEach(element => {
@@ -147,9 +137,34 @@ $(document).ready(function(){
 // navbar javascript end
 
 // let typed = new Typed('.typingText', {
-//     strings: ["Developer...", "professional", "coder..."],
+//     strings: ["Developer.", "Professional Coder..."],
 //     typeSpeed: 70,
 //     backSpeed: 70,
 //     loop: true
 // }) 
 
+// pricing_area javascript start
+
+let pricing_area = document.querySelector('.pricing_btn').querySelectorAll('a');
+
+pricing_area.forEach(element => {
+    element.addEventListener("click", function(){
+        pricing_area.forEach(nav=>nav.classList.remove("active"))
+
+        this.classList.add("active");
+    })
+})
+
+
+$(document).ready(function(){
+    $('.pricing_btn li a').click(function(){
+         var price_id = $(this).attr('data-tab')
+         $('.pricing_btn li a').removeClass('active')
+         $('.price-data').removeClass('active')
+         $(this).addClass('active')
+         $("#"+price_id).addClass('active')
+    })
+})
+
+
+// pricing_area javascript end
